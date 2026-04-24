@@ -73,17 +73,10 @@ export default defineConfig({
 				process.env.NEXT_PUBLIC_DOCS_URL,
 				"https://docs.superset.sh",
 			),
-			"process.env.SENTRY_DSN_DESKTOP": defineEnv(
-				process.env.SENTRY_DSN_DESKTOP,
-			),
+			"process.env.SENTRY_DSN_DESKTOP": defineEnv(undefined),
 			"process.env.RELAY_URL": defineEnv(process.env.RELAY_URL),
-			// Must match renderer for analytics in main process
-			"process.env.NEXT_PUBLIC_POSTHOG_KEY": defineEnv(
-				process.env.NEXT_PUBLIC_POSTHOG_KEY,
-			),
-			"process.env.NEXT_PUBLIC_POSTHOG_HOST": defineEnv(
-				process.env.NEXT_PUBLIC_POSTHOG_HOST,
-			),
+			"process.env.NEXT_PUBLIC_POSTHOG_KEY": defineEnv(undefined),
+			"process.env.NEXT_PUBLIC_POSTHOG_HOST": defineEnv(undefined),
 			"process.env.STREAMS_URL": defineEnv(
 				process.env.STREAMS_URL,
 				"https://superset-stream.fly.dev",
@@ -188,15 +181,9 @@ export default defineConfig({
 				"https://docs.superset.sh",
 			),
 			"import.meta.env.DEV_SERVER_PORT": defineEnv(String(DEV_SERVER_PORT)),
-			"import.meta.env.NEXT_PUBLIC_POSTHOG_KEY": defineEnv(
-				process.env.NEXT_PUBLIC_POSTHOG_KEY,
-			),
-			"import.meta.env.NEXT_PUBLIC_POSTHOG_HOST": defineEnv(
-				process.env.NEXT_PUBLIC_POSTHOG_HOST,
-			),
-			"import.meta.env.SENTRY_DSN_DESKTOP": defineEnv(
-				process.env.SENTRY_DSN_DESKTOP,
-			),
+			"import.meta.env.NEXT_PUBLIC_POSTHOG_KEY": defineEnv(undefined),
+			"import.meta.env.NEXT_PUBLIC_POSTHOG_HOST": defineEnv(undefined),
+			"import.meta.env.SENTRY_DSN_DESKTOP": defineEnv(undefined),
 			"process.env.RELAY_URL": defineEnv(process.env.RELAY_URL),
 			"process.env.STREAMS_URL": defineEnv(
 				process.env.STREAMS_URL,
